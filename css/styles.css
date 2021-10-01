@@ -296,15 +296,28 @@ a {
 }
 
 /* Cards */
+.card__main {
+  padding: 4rem;
+  width: 382px;
+}
+
 .card {
-  border-radius: 7px;
   box-shadow: 0px 0px 20px 10px #f3f3f3;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .card__header,
 .card__body {
-  padding: 2rem 3rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card__body {
+  font-size: 12px;
+}
+.card--secondary {
+  border-radius: 18px;
 }
 
 .card--primary .card__header {
@@ -320,6 +333,12 @@ a {
 .card--secondary .badge--secondary {
   background: #02cdf1;
 }
+
+/* @media screen and (min-width: 375px) {
+  .card__body {
+    font-size: 0.5rem;
+  }
+} */
 
 /* Plans */
 .plan__name {
@@ -532,7 +551,6 @@ a {
 .block {
   --padding-vertical: 6rem;
   padding: --padding-vertical 2rem;
-  border: 2px solid red;
 }
 
 .block__header {
